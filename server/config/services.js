@@ -47,8 +47,8 @@ module.exports = {
     bundle: 'bundle.js',
   },
   service2: {
-    api: '/main',
-    url: 'http://18.217.57.74:3001/', // michael
+    api: ['/user/login', '/user/delete', '/user/create', '/user/update', '/product/:id'],
+    url: 'http://172.31.27.161:80', // michael
     bundle: 'bundle.js',
   },
   service3: {

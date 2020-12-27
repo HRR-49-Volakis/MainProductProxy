@@ -14,4 +14,12 @@ app.use('/bundles', router.bundles);
 // Handling AJAX requests to the API by passing off requests to the api router
 app.use('/api', router.api);
 
+app.get('/loaderio-*', (req, res) => {
+	res.status(200).send('loaderio-6028ee428bcad7114b1b4ace2a18df61');
+});
+
+app.get('/:id', (req, res) => {
+	res.sendFile(`${PUBLIC_DIR}/index.html`);
+});
+
 module.exports = app;
